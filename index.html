@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>BEER</title>
+ <style>
+    .beer-box {
+       display:flex;
+       height:700px;
+       justify-content:center;
+       align-items:center;
+     }
+     div.each-type img {
+         height:100%;
+     }
+     .each-type{
+         margin:70px;
+         height:300px;
+     }
+     div.each-type:hover{
+         height:310px;
+     }
+     div.disc{
+         text-align:center;
+         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     }
+     a:link{
+         text-decoration:none;
+         color:black;
+         font-weight:bold;
+     }
+     .padding{
+       padding-left:5px;
+     }
+
+ </style>
+</head>
+<body>
+  <div class="beer-box">
+    <div class="each-type">
+      <a href="ale.html">
+         <img src="images/ale.jpg" alt="ale image" title="ale">
+      <div class="disc"> ALE </div>
+      </a> 
+    </div>
+   <div class="each-type">
+      <a href="lager.html">
+        <img src="images/lager.jpg" alt="lager image" title="lager">
+        <div class="disc padding">LAGER</div>
+      </a>
+    </div>
+   <div class="each-type">
+      <a href="lambic.html">
+        <img class="put-center" src="images/lambic.jpg" alt="lambic image" title="lambic">
+        <div class="disc padding">LAMBIC</div>
+      </a>     
+    </div>
+  </div>
+</body>
