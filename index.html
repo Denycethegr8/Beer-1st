@@ -2,58 +2,104 @@
 <html>
 <head>
  <meta charset="utf-8">
- <title>BEER</title>
- <style>
-    .beer-box {
-       display:flex;
-       height:700px;
-       justify-content:center;
-       align-items:center;
-     }
-     div.each-type img {
-         height:100%;
-     }
-     .each-type{
-         margin:70px;
-         height:300px;
-     }
-     div.each-type:hover{
-         height:310px;
-     }
-     div.disc{
-         text-align:center;
-         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-     }
-     a:link{
-         text-decoration:none;
-         color:black;
-         font-weight:bold;
-     }
-     .padding{
-       padding-left:5px;
-     }
+ <title>ALE</title>
+   <style>
+   h1{
+       text-align:center;
+       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       margin-top: 60px;
+       padding-bottom:50px;
+   }
+   h1::after{
+        border-bottom:1px solid darkgrey;
+        width:840px;
+        left:25%;
+        position:absolute;
+        content:'';
+        display:block;
+        margin-top:20px;
+    }
+   h2 {
+        text-align:left;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color:rgb(100,100,100);
+        padding-top:30px;
+    }
+    .beer-images{
+        height:100px;
+        float:left;
+    }
+    div.info-whatis{
+        width:800px;
+        margin:auto;
+    }
+    p.info-whatis{
+      border:1px solid grey;
+      position:absolute;
+      top:25%;
+      left:25%;
+      display:block;
+      width: 800px;
+      padding: 20px 0px 20px 0px;
+      text-align:justify;
+      overflow:auto;
+      padding:20px;
+    }
+    div.fixed-beers{
+        position:fixed;
+        right:100px;
+        bottom:-70%;
+        height:100%;
+    }
+    a:link{
+      text-decoration:none;
+      color:black;
+    }
+    .menu{
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      position:absolute;
+      top:200px;
+      left:20px;
+    }
+    .menu-hover:hover{
+        font-size:larger;
+    }
 
- </style>
+    ol{
+        margin-bottom:40px;
+        margin-left:40px;
+    }
+    .info-image{
+      float:left;
+      height:350px;
+      padding-right:20px;
+    }
+   </style>
 </head>
-<body>
-  <div class="beer-box">
-    <div class="each-type">
-      <a href="ale.html">
-         <img src="images/ale.jpg" alt="ale image" title="ale">
-      <div class="disc"> ALE </div>
-      </a> 
+
+  <body>
+   <h1>ALE</h1>
+
+   <div class="info-whatis">  
+    <h2>What is Ale?</h2>    
+     <p class="info-whatis">
+      <img class="info-image" src="images/ale-info.jpg" alt="ale image" title="ale"> 
+        15 ~ 24 °C 의 상대적으로 높은 온도에서 발효시켜, 달콤하고 풀 바디감이 느껴지며 과일향이 있는 맥주의 한 종류다. 발효 시에 발생하는 이산화탄소가 효모에 달라붙어 표면으로 떠오르게 되고, 이로 인해 상면에 거품을 형성한다. 따라서 상면발효 맥주라고도 한다. 15°C 이하에서 저온발효시키는 라거에 비해 짧은 시간에 발효가 완성돼서, 발효 시작후 3주 이내에 마실 수 있는 상태가 된다. 
+    </P>
+   </div>
+    
+    <div class="menu">
+      <ol><a class="menu-hover" href="ale/info-ale.html">What is Ale?</a></ol>
+      <ol><a class="menu-hover" href="ale/history-ale.html">History</a></ol>
+      <ol><a class="menu-hover" href="ale/barnds-ale.html">Notable Brands</a></ol>
     </div>
-   <div class="each-type">
+
+    <div class="fixed-beers">
       <a href="lager.html">
-        <img src="images/lager.jpg" alt="lager image" title="lager">
-        <div class="disc padding">LAGER</div>
+      <img class="beer-images" src="images/lager.jpg" title="lager">
       </a>
-    </div>
-   <div class="each-type">
       <a href="lambic.html">
-        <img class="put-center" src="images/lambic.jpg" alt="lambic image" title="lambic">
-        <div class="disc padding">LAMBIC</div>
-      </a>     
-    </div>
-  </div>
-</body>
+      <img class="beer-images" src="images/lambic.jpg" title="lambic"> 
+      </a></div>
+  </body>
+</html>
